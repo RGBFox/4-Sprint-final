@@ -17,7 +17,7 @@ const (
 	mInKm = 1000
 )
 
-// parsePackage распаковывает полученные шаги и время из строки.
+// parsePackage — распаковывает полученные шаги и время из строки.
 func parsePackage(data string) (int, time.Duration, error) {
 	s := strings.Split(data, ",")
 	if len(s) != 2 {
@@ -37,7 +37,7 @@ func parsePackage(data string) (int, time.Duration, error) {
 	return step, dur, nil
 }
 
-// DayActionInfo вычисляет количество шагов, дистанцию и калории.
+// DayActionInfo — вычисляет количество шагов, дистанцию и калории.
 func DayActionInfo(data string, weight, height float64) string {
 	step, dur, err := parsePackage(data)
 	if err != nil {
