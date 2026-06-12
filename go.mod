@@ -1,4 +1,4 @@
-module github.com/Yandex-Practicum/tracker
+module github.com/RGBFox/4-Sprint-final
 
 go 1.24.1
 
